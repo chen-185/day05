@@ -70,7 +70,7 @@ public class DeviceController {
 				row.createCell(4).setCellValue(device.getColor());
 				row.createCell(5).setCellValue(device.getPrice());
 				row.createCell(6).setCellValue(device.getStatus());
-				row.createCell(7).setCellValue(TimeUtil.formatTime(device.getCreatetime(), "yyyy-MM-ddyyyy-MM-dd HH:mm:ss"));
+				row.createCell(7).setCellValue(TimeUtil.formatTime(device.getCreatetime(), "yyyy-MM-dd HH:mm:ss"));
 			}
 			
 			OutputStream out = new FileOutputStream(new File("E://ssm-h1909F.xls"));
